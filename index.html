@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sit On That Thang | Used Furniture Delivery in the Twin Cities, MN</title>
+<meta name="description" content="Affordable used furniture delivered in Minneapolis, St. Paul and the greater Twin Cities. Junk removal and moving. Text (612) 850-6005.">
+<meta property="og:image" content="./logo.png">
+<link rel="icon" href="./logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#ffffff;--bg2:#f8f6ee;--tx:#17150a;--mut:#5f5b49;--y:#fcd004;--ya:#8f6f00;--g:rgba(255,255,255,.78);--gb:rgba(23,21,10,.1);--r:18px}
+*{box-sizing:border-box;margin:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65;overflow-x:hidden;background-image:radial-gradient(60rem 36rem at 90% -8%,rgba(252,208,4,.16),transparent 60%),radial-gradient(40rem 28rem at -10% 45%,rgba(252,208,4,.07),transparent 60%);background-attachment:fixed}
+h1,h2,h3,h4{font-family:Sora,sans-serif;line-height:1.12;letter-spacing:-.02em;font-weight:600}
+a{color:inherit}
+.i{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.i.f{fill:currentColor;stroke:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.kicker{color:var(--ya);font-weight:700;font-size:.9rem;margin-bottom:12px;display:flex;gap:8px;align-items:center}
+h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:14px;max-width:20ch}
+.lead{color:var(--mut);max-width:58ch;margin-bottom:28px}
+.glass{background:var(--g);border:1px solid var(--gb);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border-radius:var(--r);box-shadow:0 10px 30px -16px rgba(23,21,10,.2)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--y);color:#141000;padding:14px 24px;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;border:1px solid var(--y);cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s}
+.btn:hover{background:#ffe03a;transform:translateY(-2px);box-shadow:0 10px 30px -10px rgba(252,208,4,.6)}
+.btn.ghost{background:var(--g);color:var(--tx);border-color:var(--gb)}
+.btn.ghost:hover{background:rgba(23,21,10,.07);box-shadow:none}
+.btn.sm{padding:10px 16px;font-size:.9rem;border-radius:10px}
+:focus-visible{outline:2px solid var(--ya);outline-offset:3px}
+/* header */
+header{position:fixed;top:10px;left:0;right:0;z-index:60}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px;padding:0 12px 0 18px;border-radius:16px;transition:background .3s,box-shadow .3s}
+header.scrolled .bar{background:rgba(255,255,255,.9);box-shadow:0 14px 40px -18px rgba(23,21,10,.35)}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Sora;font-weight:700}
+.logo img{height:44px;width:auto;max-width:220px;object-fit:contain;display:block; border-radius:50px; }
+footer .logo img{height:40px}
+.links{display:flex;align-items:center;gap:6px}
+.links a:not(.btn){text-decoration:none;color:var(--tx);font-weight:600;font-size:.95rem;padding:8px 12px;border-radius:10px;transition:color .2s,background .2s}
+.links a:not(.btn):hover{color:var(--ya);background:rgba(23,21,10,.05)}
+.burger{display:none;background:var(--g);border:1px solid var(--gb);color:var(--tx);border-radius:10px;width:42px;height:42px;place-items:center;cursor:pointer}
+/* hero */
+.hero{padding:100px 0 8px}
+.hero .wrap{display:block}
+.pill{display:inline-flex;gap:8px;align-items:center;padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;color:var(--tx);margin-bottom:16px}
+.pill .i{color:var(--ya)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);margin-bottom:22px}
+.ln-w{display:block;overflow:hidden;padding-bottom:.08em}.ln{display:block}
+.hero p.sub{color:var(--mut);font-size:1.12rem;max-width:50ch;margin-bottom:32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:64px;padding:26px 8px}
+.stats div{text-align:center;padding:0 12px;border-right:1px solid var(--gb)}
+.stats div:last-child{border:0}
+.stats strong{display:block;font-family:Sora;font-size:clamp(1.6rem,3.4vw,2.4rem);color:var(--ya)}
+.stats span{color:var(--mut);font-size:.92rem}
+.marquee{padding:20px 0 0}
+.mq{padding:14px 0;border-radius:16px}
+.mfade{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 14%,#000 86%,transparent 100%)}
+.mt{display:flex;width:max-content}
+.mt span{display:flex;gap:10px;align-items:center;color:var(--tx);font-weight:600;font-size:.95rem;white-space:nowrap;padding:0 28px;position:relative}
+.mt span::after{content:"";position:absolute;right:-2px;top:50%;width:4px;height:4px;margin-top:-2px;border-radius:50%;background:rgba(252,208,4,.55)}
+.mt .i{color:var(--ya);width:1.15em;height:1.15em}
+/* ecommerce hero */
+.banner{position:relative;overflow:hidden;border-radius:28px;min-height:0;display:grid;grid-template-columns:1.25fr .75fr;gap:28px;padding:40px;align-items:center;border:1px solid var(--gb);background:radial-gradient(40rem 30rem at 85% 15%,rgba(252,208,4,.2),transparent 60%),radial-gradient(30rem 24rem at 10% 100%,rgba(252,208,4,.08),transparent 60%),#fffbe6}
+.bv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bshade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.96) 10%,rgba(255,255,255,.72) 55%,rgba(255,255,255,.35))}
+.banner>:not(video):not(.bshade){position:relative;z-index:1}
+.sl h1{font-size:clamp(2.1rem,4.4vw,3.5rem);margin:0 0 14px;max-width:16ch}
+.sl .sub{color:#3b3827;font-size:1.05rem;max-width:48ch;margin-bottom:22px}
+.hs{display:flex;align-items:center;gap:8px;padding:8px 8px 8px 16px;border-radius:14px;max-width:520px;margin-top:20px}
+.hs .i{color:var(--ya)}
+.hs input{border:0;background:transparent;padding:10px 6px;box-shadow:none!important}
+.dots{display:flex;gap:8px;margin-top:18px}
+.dots button{width:30px;height:6px;border-radius:6px;border:0;background:rgba(23,21,10,.18);cursor:pointer;padding:0;transition:background .3s,width .3s}
+.dots button.on{background:var(--y);width:48px}
+.tbar{display:grid;grid-template-columns:repeat(4,1fr);margin-top:14px;padding:16px 6px}
+.tbar div{display:flex;gap:12px;align-items:center;padding:0 16px;border-right:1px solid var(--gb)}
+.tbar div:last-child{border:0}
+.tbar .i{color:var(--ya);width:26px;height:26px}
+.tbar b{display:block;font-size:.95rem;line-height:1.3}.tbar span{color:var(--mut);font-size:.82rem}
+.ctiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.ct{font:inherit;color:inherit;text-align:left;padding:18px;cursor:pointer;transition:border-color .25s,transform .25s}
+.ct:hover{border-color:rgba(252,208,4,.5);transform:translateY(-4px)}
+.ct .ico{margin-bottom:14px}.ct b{display:block;font-family:Sora}.ct span{color:var(--mut);font-size:.85rem}
+.pplay{position:absolute;left:50%;top:50%;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;border:1px solid rgba(23,21,10,.15);background:rgba(255,255,255,.92);backdrop-filter:blur(8px);color:#141000;display:grid;place-items:center;cursor:pointer;z-index:2;transition:transform .2s,background .2s}
+.pplay:hover{transform:scale(1.1);background:var(--y)}
+.vbox{width:min(960px,100%);padding:12px;position:relative}
+.vx{position:absolute;top:-54px;right:0}
+.vframe{aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#f1efe4}
+.vframe iframe,.vframe video{width:100%;height:100%;border:0;display:block}
+.empty{grid-column:1/-1;color:var(--mut);padding:30px;text-align:center}
+/* hero deals + products */
+.trust{display:grid;gap:10px;margin:0 0 32px;color:var(--tx);list-style:none;padding:0}
+.trust li{display:flex;gap:10px;align-items:center}.trust .i{color:var(--ya)}
+.deals{padding:18px}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.dh b{font-family:Sora;font-size:1.05rem}.dh span{color:var(--ya);font-size:.82rem;font-weight:700}
+.deal{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:14px;border:1px solid transparent;transition:background .2s,border-color .2s}
+.deal:hover{background:rgba(23,21,10,.05);border-color:var(--gb)}
+.deal .ico{margin:0;width:46px;height:46px;flex:none}
+.deal h4{font-size:.95rem;font-family:Manrope;letter-spacing:0;font-weight:600;line-height:1.3}
+.deal small{color:var(--mut);font-size:.82rem}
+.deal .pr{margin-left:auto;text-align:right;font-family:Sora;font-weight:600;white-space:nowrap}
+.deal .pr s{display:block;color:var(--mut);font-size:.8rem;font-weight:400}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.fb{font:inherit;font-weight:600;font-size:.92rem;color:var(--tx);background:var(--g);border:1px solid var(--gb);border-radius:999px;padding:9px 18px;cursor:pointer;transition:all .2s}
+.fb:hover{border-color:rgba(252,208,4,.5)}
+.fb.on{background:var(--y);color:#141000;border-color:var(--ya)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(262px,1fr));gap:18px}
+.prod{overflow:hidden;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
+.prod:hover{border-color:rgba(252,208,4,.5);transform:translateY(-4px)}
+.pimg{aspect-ratio:4/3;display:grid;place-items:center;position:relative;color:var(--ya);background:linear-gradient(135deg,rgba(252,208,4,.14),rgba(23,21,10,.02));border-bottom:1px solid var(--gb)}
+.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pimg .i{width:56px;height:56px;stroke-width:1.2}
+.badge{position:absolute;top:12px;left:12px;background:var(--y);color:#141000;font-weight:800;font-size:.78rem;border-radius:8px;padding:3px 9px;z-index:1}
+.pcat{position:absolute;top:12px;right:12px;font-size:.74rem;font-weight:700;color:var(--tx);background:rgba(255,255,255,.9);border:1px solid var(--gb);border-radius:8px;padding:3px 9px;z-index:1}
+.pb{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pb h3{font-size:1.02rem;font-family:Manrope;letter-spacing:0;font-weight:700;line-height:1.35}
+.pp{font-family:Sora;font-weight:600;font-size:1.45rem}
+.pp s{color:var(--mut);font-size:.9rem;font-weight:400;margin-left:8px}
+.pm{display:flex;gap:6px;flex-wrap:wrap;align-items:center;color:var(--mut);font-size:.82rem}
+.pm span{display:flex;gap:5px;align-items:center}
+.pb .btn{margin-top:auto;justify-content:center}
+.pb .row{margin-top:auto;padding-top:10px}
+/* cards */
+.g4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{padding:22px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:rgba(252,208,4,.5);transform:translateY(-4px)}
+.ico{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;background:rgba(252,208,4,.2);color:var(--ya);border:1px solid rgba(252,208,4,.5);margin-bottom:18px}
+.ico .i{width:24px;height:24px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{color:var(--mut);font-size:.96rem}
+.alt{background:var(--bg2);border-block:1px solid var(--gb)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.step{padding:22px;position:relative}
+.step::before{counter-increment:s;content:counter(s);font-family:Sora;font-weight:700;color:#141000;background:var(--y);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;margin-bottom:16px}
+.step h3{font-size:1.2rem;margin-bottom:6px}.step p{color:var(--mut)}
+/* team */
+.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}
+.member{padding:20px;display:flex;flex-direction:column;gap:10px}
+.mh{display:flex;gap:16px;align-items:center}
+.avatar{width:60px;height:60px;border-radius:16px;display:grid;place-items:center;font-family:Sora;font-weight:700;font-size:1.4rem;color:var(--ya);background:rgba(252,208,4,.1);border:1px solid rgba(252,208,4,.35)}
+.member h3{font-size:1.25rem}
+.role{color:var(--ya);font-size:.88rem;font-weight:600}
+.member p{color:var(--mut);font-size:.95rem;flex:1}
+.mf{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding-top:14px;border-top:1px solid var(--gb)}
+.cnt{display:flex;gap:6px;align-items:center;color:var(--mut);font-size:.9rem}
+.mf .row{display:flex;gap:8px}
+/* modal */
+.modal{position:fixed;inset:0;background:rgba(23,21,10,.45);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:16px;z-index:100}
+.modal.open{display:flex}
+.sheet{width:min(1000px,100%);max-height:92vh;overflow:auto;padding:22px;background:rgba(255,255,255,.95)}
+.sh{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:22px}
+.sh h3{font-size:1.7rem}
+.x{background:var(--g);border:1px solid var(--gb);color:var(--tx);width:42px;height:42px;border-radius:12px;display:grid;place-items:center;cursor:pointer;flex:none}
+.x:hover{border-color:var(--ya);color:var(--ya)}
+.lgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.item{overflow:hidden;border-radius:16px}
+.pic{height:110px;display:grid;place-items:center;color:var(--ya);background:linear-gradient(135deg,rgba(252,208,4,.16),rgba(255,255,255,.03))}
+.pic .i{width:42px;height:42px;stroke-width:1.4}
+.ib{padding:14px 16px 16px}
+.price{font-family:Sora;font-weight:600;font-size:1.3rem}
+.price s{color:var(--mut);font-size:.9rem;font-weight:400;margin-left:8px}
+.item h4{font-size:.95rem;font-family:Manrope;font-weight:600;letter-spacing:0;margin:2px 0 8px}
+.free{display:inline-flex;gap:5px;align-items:center;font-size:.74rem;font-weight:700;color:var(--ya);background:rgba(252,208,4,.22);border-radius:6px;padding:2px 8px;margin-right:6px}
+.meta{display:flex;gap:5px;align-items:center;color:var(--mut);font-size:.82rem;margin-top:6px}
+.note{margin:18px 0;color:var(--mut);font-size:.85rem}
+/* reviews, faq */
+.stars{display:flex;gap:3px;color:#e6b400;margin-bottom:12px}
+.stars .i{width:18px;height:18px}.stars .off{color:#dcd8c4}
+.review p{margin-bottom:16px}
+.review small{color:var(--mut);font-weight:600}
+details{margin-bottom:10px;padding:16px 20px}
+summary{font-weight:700;cursor:pointer;display:flex;justify-content:space-between;gap:12px;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--ya);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:12px;color:var(--mut)}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.cinfo{padding:28px}
+.big-phone{display:block;font-family:Sora;font-weight:700;font-size:clamp(1.9rem,4.5vw,2.8rem);color:var(--ya);text-decoration:none;margin:10px 0 24px}
+.cl{display:grid;gap:14px;color:var(--tx)}.cl div{display:flex;gap:12px;align-items:center}.cl .i{color:var(--ya)}
+form{padding:28px;display:grid;gap:12px}
+input,select,textarea{font:inherit;padding:13px 16px;border-radius:12px;border:1px solid var(--gb);background:#fff;color:var(--tx);width:100%}
+input::placeholder,textarea::placeholder{color:#8a8774}
+select option{background:#fff}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ya);box-shadow:0 0 0 3px rgba(252,208,4,.18)}
+.ok{display:none;color:var(--ya);font-weight:600;align-items:center;gap:8px}
+footer{border-top:1px solid var(--gb);padding:22px 0;background:var(--bg2);color:var(--mut);font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+@media(max-width:860px){
+ .banner{grid-template-columns:1fr;padding:22px 18px}.tbar{grid-template-columns:1fr 1fr;gap:18px 0}.tbar div:nth-child(2){border:0}.hero{padding-top:96px}.hero .wrap,.cgrid{grid-template-columns:1fr}.deal .pr{font-size:.92rem}
+ .burger{display:grid}
+ .links{position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:stretch;padding:16px;display:none;background:rgba(255,255,255,.97);backdrop-filter:blur(18px);border:1px solid var(--gb);border-radius:16px;box-shadow:0 20px 40px -20px rgba(23,21,10,.3)}
+ .links.show{display:flex}
+ .links .btn{justify-content:center;margin-top:6px}
+ section{padding:44px 0}
+ .stats{grid-template-columns:1fr;gap:18px}.stats div{border:0;border-bottom:1px solid var(--gb);padding-bottom:18px}.stats div:last-child{border:0;padding:0}
+ .tgrid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="sofa" viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 11v5a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H6v-2a2 2 0 0 0-4 0Z"/><path d="M4 18v2M20 18v2"/></symbol>
+<symbol id="truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+<symbol id="trash" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></symbol>
+<symbol id="box" viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></symbol>
+<symbol id="bed" viewBox="0 0 24 24"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></symbol>
+<symbol id="chair" viewBox="0 0 24 24"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M5 18v2M19 18v2"/></symbol>
+<symbol id="tag" viewBox="0 0 24 24"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.41l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="book" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/></symbol>
+<symbol id="bike" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/></symbol>
+<symbol id="ladder" viewBox="0 0 24 24"><path d="M8 2v20M16 2v20M8 6h8M8 12h8M8 18h8"/></symbol>
+<symbol id="table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M6 8v12M18 8v12"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+</defs></svg>
+
+<header id="hdr"><div class="wrap"><nav class="bar glass" aria-label="Main">
+ <a class="logo" href="#top" aria-label="Sit On That Thang, back to top"><img src="./logo.jpg" alt="Sit On That Thang"></a>
+ <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg class="i"><use href="#menu"/></svg></button>
+ <div class="links" id="links">
+  <a href="#services">Services</a><a href="#products">Products</a><a href="#process">Process</a><a href="#team">Team</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+  <a class="btn sm" href="#contact">Get a quote</a>
+ </div>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+ <div class="banner" id="banner">
+  <video class="bv" id="hv" autoplay muted loop playsinline preload="auto" poster="https://images.pexels.com/videos/9583764/at-home-beautiful-home-bright-interior-cosy-home-9583764.jpeg?auto=compress&cs=tinysrgb&h=627&fit=crop&w=1200" aria-hidden="true" tabindex="-1">
+   <source src="https://videos.pexels.com/video-files/9583764/9583764-hd_1920_1080_25fps.mp4" type="video/mp4">
+   <source src="https://videos.pexels.com/video-files/9583764/9583764-uhd_2560_1440_25fps.mp4" type="video/mp4" onerror="document.getElementById('hv').hidden=true">
+  </video>
+  <div class="bshade"></div>
+  <div>
+   <div class="sl" id="sl" aria-live="polite">
+    <div class="pill glass" id="s-pill"></div>
+    <h1 id="s-h"></h1>
+    <p class="sub" id="s-p"></p>
+    <div class="cta"><a class="btn" id="s-btn" href="#products"></a><button class="btn ghost" id="watch" type="button" hidden><svg class="i"><use href="#play"/></svg>Watch video</button></div>
+   </div>
+   <form class="hs glass" id="hs" role="search"><svg class="i"><use href="#search"/></svg><input id="q" type="search" placeholder="Search couches, beds, vintage…" aria-label="Search products"><button class="btn sm" type="submit">Search</button></form>
+   <div class="dots" id="dots" role="tablist" aria-label="Hero slides"></div>
+  </div>
+  <aside class="deals glass" aria-label="Top deals">
+   <div class="dh"><b>Top deals</b><span>From current listings</span></div>
+   <div id="deals"></div>
+   <a class="btn ghost sm" style="margin-top:14px;width:100%;justify-content:center" href="#products">View all products<svg class="i"><use href="#arrow"/></svg></a>
+  </aside>
+ </div>
+ <div class="tbar glass">
+  <div><svg class="i"><use href="#truck"/></svg><p><b>Free delivery</b><span>On most couches</span></p></div>
+  <div><svg class="i"><use href="#tag"/></svg><p><b>Marked-down prices</b><span>Up to 50% off retail</span></p></div>
+  <div><svg class="i"><use href="#trash"/></svg><p><b>Junk removal</b><span>Quotes by text</span></p></div>
+  <div><svg class="i"><use href="#pin"/></svg><p><b>Twin Cities metro</b><span>Minneapolis and St. Paul</span></p></div>
+ </div>
+</div></section>
+
+<div class="marquee" aria-hidden="true"><div class="wrap"><div class="mq glass"><div class="mfade"><div class="mt" id="mt"></div></div></div></div></div>
+
+<section id="cats" style="padding:40px 0 0"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#tag"/></svg>Shop by category</div>
+ <h2 style="margin-bottom:20px">Find what you need fast.</h2>
+ <div class="ctiles" id="ctiles"></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#sofa"/></svg>Services</div>
+ <h2>Furniture first. Hauling when you need it.</h2>
+ <p class="lead">One local team that sells, delivers, removes and moves, so you only deal with one phone number.</p>
+ <div class="g4">
+  <div class="card glass rv"><div class="ico"><svg class="i"><use href="#sofa"/></svg></div><h3>Used furniture</h3><p>Sectionals, couches, beds, tables and one-off finds priced well below new.</p></div>
+  <div class="card glass rv"><div class="ico"><svg class="i"><use href="#truck"/></svg></div><h3>Delivery</h3><p>Delivered to your door across the metro. Most couch listings include free delivery.</p></div>
+  <div class="card glass rv"><div class="ico"><svg class="i"><use href="#trash"/></svg></div><h3>Junk removal</h3><p>Old couches, garage clutter or a full cleanout, hauled away with a quote up front.</p></div>
+  <div class="card glass rv"><div class="ico"><svg class="i"><use href="#box"/></svg></div><h3>Moving help</h3><p>Muscle and a truck for apartment and house moves throughout the Twin Cities.</p></div>
+ </div>
+</div></section>
+
+<section class="alt" id="process"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#check"/></svg>Process</div>
+ <h2>Three steps from listing to living room.</h2>
+ <p class="lead">No showroom trip and no waiting on a warehouse.</p>
+ <div class="steps">
+  <div class="step glass rv"><h3>Choose a seller</h3><p>Open a team member below and browse what they currently have listed.</p></div>
+  <div class="step glass rv"><h3>Confirm availability</h3><p>Message them on Marketplace or text (612) 850-6005 to lock in the item.</p></div>
+  <div class="step glass rv"><h3>Schedule delivery</h3><p>We agree on a time and bring it straight to you.</p></div>
+ </div>
+</div></section>
+
+<section id="products"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#tag"/></svg>Products</div>
+ <h2>Browse current inventory.</h2>
+ <p class="lead">Real listings with prices and savings. Message the seller to confirm availability and book delivery.</p>
+ <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+ <div class="pgrid" id="pgrid"></div>
+</div></section>
+
+<section class="alt" id="team"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#users"/></svg>Our team</div>
+ <h2>Six sellers. Six inventories.</h2>
+ <p class="lead">Each team member sells a different part of our stock on Facebook Marketplace and other platforms. Open a profile to see their live listings.</p>
+ <div class="tgrid" id="tgrid"></div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#star"/></svg>Reviews</div>
+ <h2>What customers say.</h2>
+ <p class="lead">Sample reviews shown as placeholders. Replace them with real customer feedback before launch.</p>
+ <div class="g4" id="rgrid"></div>
+</div></section>
+
+<section class="alt" id="faq"><div class="wrap" style="max-width:840px">
+ <div class="kicker"><svg class="i"><use href="#shield"/></svg>FAQ</div>
+ <h2>Common questions.</h2>
+ <p class="lead">Short answers before you text us.</p>
+ <details class="glass rv"><summary>Where do you deliver?</summary><p>Minneapolis, St. Paul and the greater Twin Cities metro. Text your address to confirm.</p></details>
+ <details class="glass rv"><summary>Is delivery really free?</summary><p>Many listings are marked FREE DELIVERY. Check the listing title, and ask if you are unsure.</p></details>
+ <details class="glass rv"><summary>How do I pay?</summary><p>Payment details are confirmed with the seller when you schedule delivery.</p></details>
+ <details class="glass rv"><summary>Can you take my old furniture?</summary><p>Yes. We offer junk removal and moving. Text (612) 850-6005 for a quote.</p></details>
+ <details class="glass rv"><summary>How do I know an item is still available?</summary><p>Each listing shows availability on Marketplace. Message the seller to confirm.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="kicker"><svg class="i"><use href="#phone"/></svg>Contact</div>
+ <h2>Get a quote.</h2>
+ <p class="lead">For a moving or junk removal job, or a question about a listing, text us.</p>
+ <div class="cgrid">
+  <div class="cinfo glass rv">
+   <a class="big-phone" href="tel:6128506005">(612) 850-6005</a>
+   <div class="cl">
+    <div><svg class="i"><use href="#pin"/></svg>Minneapolis, St. Paul and the Twin Cities metro, MN</div>
+    <div><svg class="i"><use href="#truck"/></svg>Delivery, junk removal and moving</div>
+    <div><svg class="i"><use href="#clock"/></svg>Text anytime. We reply as soon as we can.</div>
+   </div>
+  </div>
+  <form class="glass rv" id="form" novalidate>
+   <input name="name" placeholder="Your name" aria-label="Your name" required>
+   <input name="phone" type="tel" placeholder="Phone number" aria-label="Phone number" required>
+   <select name="job" aria-label="What do you need"><option>Buy furniture</option><option>Junk removal</option><option>Moving help</option><option>Something else</option></select>
+   <textarea name="msg" rows="4" placeholder="Tell us what you need" aria-label="Message"></textarea>
+   <button class="btn" type="submit">Send request<svg class="i"><use href="#arrow"/></svg></button>
+   <div class="ok" id="ok" role="status"><svg class="i"><use href="#check"/></svg>Opening your text app to send the request.</div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><a class="logo" href="#top" aria-label="Sit On That Thang, back to top"><img src="./logo.png" alt="Sit On That Thang"></a><span>Used furniture in the Twin Cities · (612) 850-6005</span></div></footer>
+
+<div class="modal" id="vmodal" role="dialog" aria-modal="true" aria-label="Video"><div class="vbox glass"><button class="x vx" id="vclose" aria-label="Close video"><svg class="i"><use href="#x"/></svg></button><div class="vframe" id="vframe"></div></div></div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mtitle">
+ <div class="sheet glass">
+  <div class="sh"><div><h3 id="mtitle"></h3><div class="role" id="mrole"></div></div>
+  <button class="x" id="close" aria-label="Close"><svg class="i"><use href="#x"/></svg></button></div>
+  <div class="lgrid" id="lgrid"></div>
+  <p class="note" id="mnote"></p>
+  <a class="btn" id="mlink" target="_blank" rel="noopener">Open Marketplace profile<svg class="i"><use href="#ext"/></svg></a>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+/* ===== EDIT CONTENT HERE =====
+   Alex's listings come from the Marketplace screenshot. Members 2-6 are SAMPLE data.
+   Item: [title, icon, price, original price (0 = none), location, free delivery (1/0)]
+   Icons: sofa, bed, chair, table, book, bike, ladder, clock, tag, box */
+const team=[
+ {name:"Alex",role:"Couches, sectionals and more",bio:"Sells sectionals, beds, vintage finds and a few dirt bikes. Most couches include free delivery.",real:1,
+  url:"https://www.facebook.com/marketplace/profile/61552605434239/?ref=permalink&mibextid=6ojiHh",
+  items:[["Vintage Classical & Op… collection","book",100,200,"Minneapolis, MN",0],["Beige couch","sofa",100,0,"Minneapolis, MN",1],["IKEA U-shaped sectional with storage","sofa",430,500,"Minneapolis, MN",1],["Thomas… sectional with chaise","sofa",645,780,"Minneapolis, MN",1],["Modern gray sectional","sofa",380,445,"Minneapolis, MN",1],["Full-size bed","bed",145,200,"Minneapolis, MN",1],["Larry Laslo cream sectional","sofa",1100,1800,"Minneapolis, MN",0],["30′ aluminum scaffold","ladder",900,0,"Minneapolis, MN",0],["Couch liquidation sale (50% off)","tag",200,0,"Minneapolis, MN",1],["2022 Kawasaki KX","bike",3600,4100,"Minneapolis, MN",0],["70s vintage Howard Miller clock table","clock",450,625,"Minneapolis, MN",0],["2018 Kawasaki KLX","bike",2199,0,"Ames, IA",0]]},
+ {name:"Team member 2",role:"Sectionals",bio:"Sample bio. Describe what this seller focuses on.",url:"https://www.facebook.com/marketplace/profile/61575964883792/?ref=permalink&mibextid=6ojiHh",
+  items:[["Sample sectional sofa","sofa",500,650,"Minneapolis, MN",1],["Sample loveseat","sofa",180,0,"St. Paul, MN",1],["Sample ottoman","chair",60,0,"Minneapolis, MN",0]]},
+ {name:"Team member 3",role:"Bedroom furniture",bio:"Sample bio. Describe what this seller focuses on.",url:"https://www.facebook.com/marketplace/profile/100044124171261/?ref=permalink&mibextid=6ojiHh",
+  items:[["Sample queen bed frame","bed",220,300,"Minneapolis, MN",1],["Sample dresser","box",120,0,"St. Paul, MN",1],["Sample nightstand set","table",70,0,"Minneapolis, MN",0]]},
+ {name:"Team member 4",role:"Tables and dining",bio:"Sample bio. Describe what this seller focuses on.",url:"https://www.facebook.com/marketplace/profile/1314181227/",
+  items:[["Sample dining table","table",250,0,"Minneapolis, MN",1],["Sample coffee table","table",90,120,"St. Paul, MN",0]]},
+ {name:"Team member 5",role:"Recliners and chairs",bio:"Sample bio. Describe what this seller focuses on.",url:"https://www.facebook.com/marketplace/profile/100010445208349/?ref=permalink&mibextid=6ojiHh",
+  items:[["Sample recliner","chair",140,0,"Minneapolis, MN",1],["Sample accent chair","chair",75,100,"St. Paul, MN",1]]},
+ {name:"Team member 6",role:"Odds and ends",bio:"Sample bio. Describe what this seller focuses on.",url:"https://www.facebook.com/marketplace/profile/100011983991681/?ref=permalink&mibextid=6ojiHh",
+  items:[["Sample bookshelf","book",60,0,"Minneapolis, MN",0],["Sample desk","table",110,150,"St. Paul, MN",1]]}
+];
+const reviews=[
+ {n:"Sample customer A",t:"The sectional arrived on time and looked better in person. Easy to deal with.",s:5},
+ {n:"Sample customer B",t:"Great price and free delivery. I would buy from them again.",s:5},
+ {n:"Sample customer C",t:"They hauled away our old couch the same day. Fast and fair.",s:5},
+ {n:"Sample customer D",t:"Quick replies by text and no hassle on moving day.",s:4}
+];
+const $=id=>document.getElementById(id);
+const ic=(n,c='')=>`<svg class="i ${c}"><use href="#${n}"/></svg>`;
+const money=n=>"$"+n.toLocaleString();
+$('tgrid').innerHTML=team.map((m,i)=>`<article class="member glass rv">
+ <div class="mh"><div class="avatar" aria-hidden="true">${/^Team/.test(m.name)?m.name.slice(-1):m.name[0]}</div><div><h3>${m.name}</h3><div class="role">${m.role}</div></div></div>
+ <p>${m.bio}</p>
+ <div class="mf"><span class="cnt">${ic('tag')}${m.items.length} listings</span>
+ <div class="row"><button class="btn sm" data-i="${i}">View listings</button><a class="btn sm ghost" href="${m.url}" target="_blank" rel="noopener" aria-label="${m.name} Marketplace profile">${ic('ext')}</a></div></div></article>`).join('');
+$('rgrid').innerHTML=reviews.map(r=>`<figure class="card glass review rv"><div class="stars" aria-label="${r.s} out of 5">${[1,2,3,4,5].map(k=>ic('star','f'+(k>r.s?' off':''))).join('')}</div><p>${r.t}</p><small>${r.n}</small></figure>`).join('');
+
+let last=null;
+function openM(i){const m=team[i];
+ $('mtitle').textContent=m.name+"'s listings";$('mrole').textContent=m.role;$('mlink').href=m.url;
+ $('mnote').textContent=m.real?"Listings and prices from the Marketplace page. Availability can change.":"Sample listings. Replace with this seller's real items.";
+ $('lgrid').innerHTML=m.items.map(([t,e,p,o,l,f])=>`<div class="item glass"><div class="pic">${ic(e)}</div><div class="ib"><div class="price">${money(p)}${o?`<s>${money(o)}</s>`:''}</div><h4>${t}</h4>${f?`<span class="free">${ic('truck')}Free delivery</span>`:''}<div class="meta">${ic('pin')}${l}</div></div></div>`).join('');
+ $('modal').classList.add('open');document.body.style.overflow='hidden';$('close').focus();
+ if(window.gsap&&!rm){gsap.fromTo('.sheet',{y:34,opacity:0,scale:.97},{y:0,opacity:1,scale:1,duration:.45,ease:'power3.out'});gsap.from('.item',{y:20,opacity:0,stagger:.04,duration:.5,delay:.1,ease:'power2.out'})}
+}
+function closeM(){$('modal').classList.remove('open');document.body.style.overflow='';last&&last.focus()}
+$('tgrid').addEventListener('click',e=>{const b=e.target.closest('button[data-i]');if(b){last=b;openM(+b.dataset.i)}});
+$('close').onclick=closeM;
+$('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeM()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+$('burger').onclick=()=>{const s=$('links').classList.toggle('show');$('burger').setAttribute('aria-expanded',s)};
+$('links').addEventListener('click',e=>{if(e.target.closest('a'))$('links').classList.remove('show')});
+addEventListener('scroll',()=>$('hdr').classList.toggle('scrolled',scrollY>20),{passive:true});
+
+$('form').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);
+ if(!f.get('name').trim()||!f.get('phone').trim()){alert('Please add your name and phone number.');return}
+ $('ok').style.display='flex';
+ location.href='sms:+16128506005?&body='+encodeURIComponent(`Hi, I'm ${f.get('name')} (${f.get('phone')}). I need: ${f.get('job')}. ${f.get('msg')}`);e.target.reset()});
+
+/* ===== Products (built from sellers marked real:1) =====
+   To show a photo, add a 7th value to an item: an image URL or file path. */
+const catOf={sofa:'Couches',bed:'Bedroom',bike:'Powersports',clock:'Vintage',book:'Vintage',ladder:'Equipment',tag:'Sale',table:'Tables',chair:'Chairs',box:'Other'};
+const products=team.filter(m=>m.real).flatMap(m=>m.items.map(([t,e,p,o,l,f,img,vid])=>({t,e,p,o,l,f,img,vid,cat:catOf[e]||'Other',seller:m.name,url:m.url})));
+const save=x=>x.o?Math.round((x.o-x.p)/x.o*100):0;
+$('deals').innerHTML=products.filter(x=>x.o&&x.cat!=='Powersports').sort((a,b)=>save(b)-save(a)).slice(0,4).map(x=>`<div class="deal"><div class="ico">${ic(x.e)}</div><div><h4>${x.t}</h4><small>Save ${save(x)}% · ${x.seller}</small></div><div class="pr">${money(x.p)}<s>${money(x.o)}</s></div></div>`).join('');
+const cats=['All',...new Set(products.map(x=>x.cat))];
+let cur='All',term='';
+function drawP(){
+ $('filters').innerHTML=cats.map(c=>`<button class="fb${c===cur?' on':''}" data-c="${c}" aria-pressed="${c===cur}">${c}</button>`).join('');
+ $('pgrid').innerHTML=(list=>list.length?list:'<p class="empty">No products match your search. Try another word or clear the filter.</p>')(products.filter(x=>(cur==='All'||x.cat===cur)&&(!term||(x.t+' '+x.cat).toLowerCase().includes(term))).map(x=>`<article class="prod glass"><div class="pimg">${x.img?`<img src="${x.img}" alt="${x.t}" loading="lazy">`:ic(x.e)}${x.o?`<span class="badge">-${save(x)}%</span>`:''}<span class="pcat">${x.cat}</span>${x.vid?`<button class="pplay" data-v="${x.vid}" aria-label="Play video: ${x.t}">${ic('play','f')}</button>`:''}</div><div class="pb"><h3>${x.t}</h3><div class="pp">${money(x.p)}${x.o?`<s>${money(x.o)}</s>`:''}</div><div class="pm">${x.f?`<span class="free">${ic('truck')}Free delivery</span>`:''}<span>${ic('pin')}${x.l}</span></div><div class="pm"><span>${ic('users')}Seller: ${x.seller}</span></div><a class="btn sm" href="${x.url}" target="_blank" rel="noopener">Message seller${ic('ext')}</a></div></article>`).join(''));
+}
+const catIc={Couches:'sofa',Bedroom:'bed',Powersports:'bike',Vintage:'clock',Equipment:'ladder',Sale:'tag',Tables:'table',Chairs:'chair',Other:'box'};
+$('ctiles').innerHTML=cats.slice(1).map(c=>`<button class="ct glass" data-c="${c}"><div class="ico">${ic(catIc[c]||'box')}</div><b>${c}</b><span>${products.filter(x=>x.cat===c).length===1?'1 item':products.filter(x=>x.cat===c).length+' items'}</span></button>`).join('');
+function goShop(c,t){cur=c||'All';term=t||'';drawP();document.getElementById('products').scrollIntoView({behavior:'smooth'})}
+$('ctiles').addEventListener('click',e=>{const b=e.target.closest('.ct');if(b)goShop(b.dataset.c)});
+$('hs').addEventListener('submit',e=>{e.preventDefault();goShop('All',$('q').value.trim().toLowerCase())});
+drawP();
+$('filters').addEventListener('click',e=>{const b=e.target.closest('.fb');if(!b)return;cur=b.dataset.c;term='';drawP();
+ if(window.gsap&&!rm)gsap.from('.prod',{y:22,opacity:0,duration:.5,stagger:.05,ease:'power2.out'})});
+
+/* ===== Videos =====
+   Hero background video: edit the <source> tags inside <video id="hv"> in the HTML.
+   PROMO_VIDEO: YouTube or Vimeo link (or .mp4) opened by the "Watch video" button.
+   Product videos: add an 8th value to an item (see products note above). Leave blank to hide. */
+const PROMO_VIDEO="";
+function embed(u){let m;
+ if(m=u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([\w-]{6,})/))return`<iframe src="https://www.youtube.com/embed/${m[1]}?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Video"></iframe>`;
+ if(m=u.match(/vimeo\.com\/(?:video\/)?(\d+)/))return`<iframe src="https://player.vimeo.com/video/${m[1]}?autoplay=1" allow="autoplay; fullscreen" allowfullscreen title="Video"></iframe>`;
+ return`<video src="${u}" controls autoplay playsinline></video>`}
+function playV(u){$('vframe').innerHTML=embed(u);$('vmodal').classList.add('open');document.body.style.overflow='hidden';$('vclose').focus()}
+function stopV(){$('vframe').innerHTML='';$('vmodal').classList.remove('open');document.body.style.overflow=''}
+$('vclose').onclick=stopV;
+$('vmodal').addEventListener('click',e=>{if(e.target.id==='vmodal')stopV()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')stopV()});
+$('pgrid').addEventListener('click',e=>{const b=e.target.closest('.pplay');if(b)playV(b.dataset.v)});
+if(PROMO_VIDEO){$('watch').hidden=false;$('watch').onclick=()=>playV(PROMO_VIDEO)}
+/* Hero background video: replace the <source> links in the HTML (id="hv") with your own file. */
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){const v=$('hv');v.removeAttribute('autoplay');v.pause()}
+
+/* ===== Hero slides ===== */
+const slides=[
+ {pill:['sofa','Couch liquidation sale'],h:'Save up to 50% on couches and sectionals.',p:'Used sectionals and sofas from local sellers, many with free delivery to your door.',b:'Shop couches',cat:'Couches'},
+ {pill:['bed','Bedroom and more'],h:'Beds, frames and finds at fair prices.',p:'Full-size beds, vintage pieces and one-off items, listed and ready to go.',b:'Shop bedroom',cat:'Bedroom'},
+ {pill:['truck','Junk removal and moving'],h:'Need something hauled away?',p:'Text us for a quote on junk removal or moving help anywhere in the Twin Cities.',b:'Get a quote',href:'#contact'}
+];
+let si=0,timer;
+function drawS(i,anim){const x=slides[i];
+ const set=()=>{$('s-pill').innerHTML=ic(x.pill[0])+x.pill[1];$('s-h').textContent=x.h;$('s-p').textContent=x.p;$('s-btn').innerHTML=x.b+ic('arrow');$('s-btn').href=x.href||'#products';$('s-btn').dataset.cat=x.cat||'';
+  document.querySelectorAll('#dots button').forEach((d,k)=>{d.classList.toggle('on',k===i);d.setAttribute('aria-selected',k===i)})};
+ if(anim&&window.gsap){gsap.to('#sl',{opacity:0,y:10,duration:.25,onComplete:()=>{set();gsap.to('#sl',{opacity:1,y:0,duration:.45,ease:'power2.out'})}})}else set()}
+$('dots').innerHTML=slides.map((_,k)=>`<button role="tab" aria-label="Slide ${k+1}"></button>`).join('');
+$('dots').addEventListener('click',e=>{const k=[...$('dots').children].indexOf(e.target.closest('button'));if(k>=0){si=k;drawS(k,1);auto()}});
+$('s-btn').addEventListener('click',e=>{const c=$('s-btn').dataset.cat;if(c){e.preventDefault();goShop(c)}});
+function auto(){clearInterval(timer);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)timer=setInterval(()=>{si=(si+1)%slides.length;drawS(si,1)},7000)}
+$('banner').addEventListener('mouseenter',()=>clearInterval(timer));$('banner').addEventListener('mouseleave',auto);
+drawS(0,0);auto();
+
+/* Marquee content */
+const mi=[['sofa','Sectionals'],['sofa','Couches'],['bed','Beds'],['table','Dining tables'],['chair','Chairs'],['clock','Vintage finds'],['truck','Delivery'],['trash','Junk removal'],['box','Moving help']];
+const mrow=mi.map(([i,t])=>`<span>${ic(i)}${t}</span>`).join('');
+$('mt').innerHTML=mrow+mrow;
+
+/* Block right-click and DevTools shortcuts (deterrent only) */
+document.addEventListener('contextmenu',e=>{if(!e.target.closest('input,textarea'))e.preventDefault()});
+document.addEventListener('keydown',e=>{const k=e.key.toLowerCase();
+ if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&['i','j','c'].includes(k))||(e.ctrlKey&&k==='u')||(e.metaKey&&e.altKey&&['i','j','c','u'].includes(k))){e.preventDefault();e.stopPropagation()}},true);
+
+/* ===== GSAP animations ===== */
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(window.gsap&&window.ScrollTrigger&&!rm){
+ gsap.registerPlugin(ScrollTrigger);
+ gsap.timeline({defaults:{ease:'power3.out'}})
+  .from('.bar',{y:-30,opacity:0,duration:.7})
+  .from('.banner',{y:30,opacity:0,duration:.9},.1)
+  .from('#sl > *',{y:24,opacity:0,duration:.7,stagger:.1},.5)
+  .from('.hs,.dots',{y:18,opacity:0,duration:.6,stagger:.1},.9)
+  .from('.deal',{x:26,opacity:0,duration:.6,stagger:.1},.9)
+  .from('.tbar',{y:20,opacity:0,duration:.7},1.1);
+ const mq=gsap.to('.mt',{xPercent:-50,duration:36,repeat:-1,ease:'none'});
+ const mw=document.querySelector('.mq');
+ mw.addEventListener('mouseenter',()=>gsap.to(mq,{timeScale:0,duration:.5}));
+ mw.addEventListener('mouseleave',()=>gsap.to(mq,{timeScale:1,duration:.5}));
+ ScrollTrigger.batch('.rv',{start:'top 88%',once:true,onEnter:b=>gsap.from(b,{y:34,opacity:0,duration:.8,stagger:.09,ease:'power3.out',clearProps:'transform,opacity'})});
+ document.querySelectorAll('[data-n]').forEach(el=>{const o={v:0},end=+el.dataset.n,s=el.dataset.s||'';
+  ScrollTrigger.create({trigger:el,start:'top 92%',once:true,onEnter:()=>gsap.to(o,{v:end,duration:1.6,ease:'power2.out',onUpdate:()=>el.textContent=Math.round(o.v)+s})})});
+}else{document.querySelectorAll('[data-n]').forEach(el=>el.textContent=el.dataset.n+(el.dataset.s||''))}
+</script>
+</body>
+</html>
